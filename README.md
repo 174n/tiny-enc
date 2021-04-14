@@ -1,4 +1,4 @@
-### ```🔐 tiny-enc - Tiny text encryption for a modern browsers```
+### ```🔐 tiny-enc - Tiny text encryption for modern browsers```
 
 [![last commit](https://img.shields.io/github/last-commit/Rundik/tiny-enc.svg)](https://github.com/Rundik/tiny-enc/commits/master)
 [![bundle size](https://img.shields.io/github/size/Rundik/tiny-enc/tiny-enc.min.js)](https://github.com/Rundik/tiny-enc/blob/master/tiny-enc.min.js)

@@ -1,7 +1,7 @@
 {
   "name": "tiny-enc",
-  "version": "1.0.1",
-  "description": "Tiny text encryption for browser",
+  "version": "1.0.2",
+  "description": "Tiny text encryption for modern browsers",
   "scripts": {
     "build": "run-s minify build-module",
     "minify": "uglifyjs --compress --mangle -o tiny-enc.min.js tiny-enc.js",
