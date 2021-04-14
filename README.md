@@ -14,7 +14,7 @@ Tiny text encryption library for browser. It does use [SubtleCrypto](https://dev
   import tinyEnc from "https://unpkg.com/tiny-enc";
   // use it as a module or just copy/paste the code
 
-  await tinyEnc.encryptAES("password", "Hello, World"); // KA+e+PmeSy0osLFTjTgrxFZAoLJ7iixh89G7TkuyHEQ=
-  await tinyEnc.decryptAES("password", "KA+e+PmeSy0osLFTjTgrxFZAoLJ7iixh89G7TkuyHEQ="); // Hello, World
+  await tinyEnc.encrypt("password", "Hello, World"); // KA+e+PmeSy0osLFTjTgrxFZAoLJ7iixh89G7TkuyHEQ=
+  await tinyEnc.decrypt("password", "KA+e+PmeSy0osLFTjTgrxFZAoLJ7iixh89G7TkuyHEQ="); // Hello, World
 </script>
 ```

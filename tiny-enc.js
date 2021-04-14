@@ -14,7 +14,7 @@
       ["encrypt", "decrypt"]
     );
   window.tinyEnc = {
-    encryptAES: async (pass, msg) => {
+    encrypt: async (pass, msg) => {
       const iv = crypto.getRandomValues(ua(16));
       return btoa([...ua(iv), ...ua(await subtle.encrypt(
         { ...alg, iv },
@@ -22,7 +22,7 @@
         te.encode(msg)
       ))].reduce((data, byte) => data + fcc(byte), ''));
     },
-    decryptAES: async (pass, msg) => {
+    decrypt: async (pass, msg) => {
       return [...ua(await subtle.decrypt(
         { ...alg, iv: base642ab(msg).slice(0, 16) },
         await getKey(pass),

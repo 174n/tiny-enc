@@ -9,8 +9,8 @@
   <script type="module">
     import tinyEnc from "./tiny-enc.module.min.js";
 
-    const enc = await tinyEnc.encryptAES("password", "Hello, World");
-    const dec = await tinyEnc.decryptAES("password", enc);
+    const enc = await tinyEnc.encrypt("password", "Hello, World");
+    const dec = await tinyEnc.decrypt("password", enc);
     console.log(enc);
     console.log(dec);
   </script>
