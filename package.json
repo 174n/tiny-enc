@@ -1,0 +1,33 @@
+{
+  "name": "tiny-enc",
+  "version": "1.0.0",
+  "description": "Tiny text encryption for browser",
+  "scripts": {
+    "build": "run-s minify build-module",
+    "minify": "uglifyjs --compress --mangle -o tiny-enc.min.js tiny-enc.js",
+    "build-module": "node build-es6-module"
+  },
+  "main": "tiny-enc.module.min.js",
+  "unpkg": "tiny-enc.module.min.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rundik/tiny-enc.git"
+  },
+  "author": "Ivan Alexandrov",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Rundik/tiny-enc/issues"
+  },
+  "keywords": [
+    "aes",
+    "encryption",
+    "decryption",
+    "text encryption",
+    "SubtleCrypto"
+  ],
+  "homepage": "https://github.com/Rundik/tiny-enc#readme",
+  "devDependencies": {
+    "npm-run-all": "^4.1.5",
+    "uglify-js": "^3.13.4"
+  }
+}
